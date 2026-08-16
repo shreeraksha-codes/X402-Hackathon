@@ -13,7 +13,7 @@ export default function NotFound() {
         width: "100%",
         overflowX: "hidden",
         background: "#000",
-        fontFamily: "'JetBrains Mono', monospace",
+        fontFamily: '"Geist Mono:SemiBold", monospace',
       }}
     >
       <video
