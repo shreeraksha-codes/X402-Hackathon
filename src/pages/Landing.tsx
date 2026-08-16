@@ -44,7 +44,7 @@ export default function Landing() {
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <Link
             to="/demo"
-            className="liquid-glass rounded-full px-6 py-3 font-body text-sm font-medium text-paper hover:bg-white/10"
+            className="liquid-glass rounded-full px-6 py-3 font-body text-sm font-medium text-paper hover:bg-cream/10"
           >
             Explore the live demo
           </Link>
