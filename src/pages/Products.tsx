@@ -27,7 +27,7 @@ export default function Products() {
         </div>
         <Link
           to="/products/new"
-          className="liquid-glass rounded-full px-5 py-2.5 font-body text-sm text-paper hover:bg-cream/10"
+          className="liquid-glass rounded-full px-5 py-2.5 font-body text-sm text-paper hover:bg-white/10"
         >
           + New Passport
         </Link>

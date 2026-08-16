@@ -45,7 +45,7 @@ export default function Terminal({
   };
 
   return (
-    <div className="hash-text rounded-lg border border-line bg-navy/60 p-4 text-xs leading-relaxed">
+    <div className="hash-text rounded-lg border border-line bg-black/60 p-4 text-xs leading-relaxed">
       {lines.length === 0 && !running && (
         <div className="text-paper/30">awaiting request...</div>
       )}
