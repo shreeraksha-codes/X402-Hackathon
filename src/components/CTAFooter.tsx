@@ -36,35 +36,35 @@ const CtaFooter = () => {
       {/* Top fade */}
       <div
         className="absolute top-0 left-0 right-0 z-[1] pointer-events-none"
-        style={{ height: '200px', background: 'linear-gradient(to bottom, black, transparent)' }}
+        style={{ height: '200px', background: 'linear-gradient(to bottom, #F5F5F0, transparent)' }}
       />
       {/* Bottom fade */}
       <div
         className="absolute bottom-0 left-0 right-0 z-[1] pointer-events-none"
-        style={{ height: '200px', background: 'linear-gradient(to top, black, transparent)' }}
+        style={{ height: '200px', background: 'linear-gradient(to top, #F5F5F0, transparent)' }}
       />
 
       {/* Content */}
       <div className="relative z-10">
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-heading italic text-white tracking-tight leading-[0.85] max-w-3xl mx-auto mb-4">
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-heading italic text-black tracking-tight leading-[0.85] max-w-3xl mx-auto mb-4">
           Your next website starts here.
         </h2>
         <p className="text-white/60 font-body font-light text-sm md:text-base max-w-xl mx-auto mb-8">
           Book a free strategy call. See what AI&#8209;powered design can do. No commitment, no pressure. Just possibilities.
         </p>
         <div className="flex items-center justify-center gap-6">
-          <button className="liquid-glass-strong rounded-full px-6 py-3 text-sm font-medium text-white flex items-center gap-2 hover:bg-white/10 transition-all font-body">
+          <button className="liquid-glass-strong rounded-full px-6 py-3 text-sm font-medium text-black flex items-center gap-2 hover:bg-white/5 transition-all font-body">
             Book a Call
             <ArrowUpRight className="h-5 w-5" />
           </button>
-          <button className="bg-white text-black rounded-full px-6 py-3 text-sm font-medium flex items-center gap-2 hover:bg-white/90 transition-colors font-body">
+          <button className="bg-black text-white rounded-full px-6 py-3 text-sm font-medium flex items-center gap-2 hover:bg-black/90 transition-colors font-body">
             View Pricing
             <ArrowUpRight className="h-4 w-4" />
           </button>
         </div>
 
         {/* Footer */}
-        <div className="mt-32 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-32 pt-8 border-t border-black/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/40 font-body font-light text-xs">
             &copy; 2026 Studio. All rights reserved.
           </p>

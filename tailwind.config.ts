@@ -5,21 +5,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: "#0A0A0B",
-        panel: "#111113",
-        line: "rgba(245,245,240,0.10)",
-        paper: "#F5F5F0",
-        verified: "#34D399",
-        tampered: "#F0563D",
-        anchor: "#5FC7E8",
+        ink: "#F5F5F0",       // Light background
+        panel: "#FFFFFF",     // White panels
+        line: "rgba(10, 10, 11, 0.10)", // Dark line
+        paper: "#0A0A0B",     // Dark text
+        verified: "#059669",  // Darker green for light theme
+        tampered: "#DC2626",  // Darker red for light theme
+        anchor: "#0284C7",    // Darker blue for light theme
       },
       fontFamily: {
-        heading: ["'Instrument Serif'", "serif"],
-        body: ["'Barlow'", "sans-serif"],
+        heading: ["'Playfair Display'", "serif"],
+        body: ["'Lora'", "serif"],
         mono: ["'JetBrains Mono'", "monospace"],
       },
       boxShadow: {
-        glass: "4px 4px 4px rgba(0,0,0,0.25), inset 0 1px 1px rgba(255,255,255,0.12)",
+        glass: "4px 4px 4px rgba(0,0,0,0.05), inset 0 1px 1px rgba(255,255,255,0.4)",
       },
     },
   },

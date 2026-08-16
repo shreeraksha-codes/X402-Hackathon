@@ -2,14 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 html,
 body {
-  background: #000;
-  color: #fff;
+  background: #F5F5F0;
+  color: #0A0A0B;
 }
 
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: "Lora", serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
 }
 
 @font-face {
@@ -20,30 +28,23 @@ body {
   src: url("https://static.figma.com/font/GeistMono_wght__1") format("woff2");
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Instrument Serif", serif;
-}
-
 ::selection {
-  background: rgba(52, 211, 153, 0.35);
+  background: rgba(52, 211, 153, 0.25);
 }
 
 @layer components {
-  .liquid-glass-strong {
-    background: rgba(255, 255, 255, 0.01);
-    background-blend-mode: luminosity;
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
-    border: none;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05),
-      inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  .liquid-glass {
+    background: rgba(255, 255, 255, 0.4);
+    background-blend-mode: normal;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(10, 10, 11, 0.1);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.6);
     position: relative;
     overflow: hidden;
   }
 
-  .liquid-glass-strong::before {
+  .liquid-glass::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -51,12 +52,12 @@ h3 {
     padding: 1.4px;
     background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(255, 255, 255, 0.2) 20%,
-      rgba(255, 255, 255, 0) 40%,
-      rgba(255, 255, 255, 0) 60%,
-      rgba(255, 255, 255, 0.2) 80%,
-      rgba(255, 255, 255, 0.5) 100%
+      rgba(10, 10, 11, 0.15) 0%,
+      rgba(10, 10, 11, 0.05) 20%,
+      rgba(10, 10, 11, 0) 40%,
+      rgba(10, 10, 11, 0) 60%,
+      rgba(10, 10, 11, 0.05) 80%,
+      rgba(10, 10, 11, 0.15) 100%
     );
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
@@ -67,19 +68,19 @@ h3 {
   .input {
     width: 100%;
     border-radius: 0.5rem;
-    border: 1px solid rgba(245, 245, 240, 0.1);
-    background: #111113;
+    border: 1px solid rgba(10, 10, 11, 0.2);
+    background: #FFFFFF;
     padding: 0.625rem 0.875rem;
-    font-family: "Barlow", sans-serif;
+    font-family: "Lora", serif;
     font-size: 0.875rem;
-    color: #f5f5f0;
+    color: #0A0A0B;
   }
   .input::placeholder {
-    color: rgba(245, 245, 240, 0.3);
+    color: rgba(10, 10, 11, 0.4);
   }
   .input:focus {
     outline: none;
-    border-color: rgba(52, 211, 153, 0.5);
+    border-color: #0A0A0B;
   }
 
   .hash-text {
@@ -102,4 +103,38 @@ h3 {
 .crack {
   animation: crack-in 220ms ease-out forwards;
   transform-origin: center;
+}
+
+@layer components {
+  .liquid-glass-strong {
+    background: rgba(255, 255, 255, 0.4);
+    background-blend-mode: normal;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border: 1px solid rgba(10, 10, 11, 0.1);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .liquid-glass-strong::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.4px;
+    background: linear-gradient(
+      180deg,
+      rgba(10, 10, 11, 0.2) 0%,
+      rgba(10, 10, 11, 0.05) 20%,
+      rgba(10, 10, 11, 0) 40%,
+      rgba(10, 10, 11, 0) 60%,
+      rgba(10, 10, 11, 0.05) 80%,
+      rgba(10, 10, 11, 0.2) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
 }

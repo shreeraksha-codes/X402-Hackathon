@@ -97,7 +97,7 @@ export default function NewProduct() {
           </Link>
           <Link
             to={`/products/${created.id}/passport`}
-            className="liquid-glass rounded-full px-5 py-2.5 font-body text-sm text-paper hover:bg-white/10"
+            className="liquid-glass rounded-full px-5 py-2.5 font-body text-sm text-paper hover:bg-black/5"
           >
             View manufacturer view
           </Link>
